@@ -1,0 +1,19 @@
+{
+    "products":  [
+        {
+            "id": 1,
+            "name": "Notebook Macbook Pro 15'",
+            "price": 28999.99 
+        },
+        {
+            "id": 2,
+            "name": "Wacom Ultra Pen'",
+            "price": 119.00 
+        },
+        {
+            "id": 3,
+            "name": "HyperX RAM Memory 16GB",
+            "price": 499.99 
+        }
+    ]
+}
