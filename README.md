@@ -4,7 +4,7 @@ Angular 9 Base Project
 # Introduction
 That is a simple base angular project based on Cod3r free class (https://www.youtube.com/channel/UCcMcmtNSSQECjKsJA1XH5MQ/featured)
 
-# Propose
+# Purpose
 Study and initial boilerplate for small new projects
 
 # Stack
