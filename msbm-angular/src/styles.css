@@ -8,3 +8,23 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .v-middle {
     vertical-align: middle;
 }
+
+.all-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.overlay{
+    height: 100vh;
+    width: 100%;
+    padding-left: 200px;
+    background-color: #AAAAAA;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    position: fixed;
+}

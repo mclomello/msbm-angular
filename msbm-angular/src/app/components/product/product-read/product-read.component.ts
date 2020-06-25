@@ -11,6 +11,7 @@ import { ConfirmationDialogComponent } from '../../shared/confirmation-dialog/co
 })
 export class ProductReadComponent implements OnInit {
 
+  isLoading: boolean
   products: Product[]
   displayedColumns = ['id', 'name', 'price', 'action']
 
@@ -21,8 +22,10 @@ export class ProductReadComponent implements OnInit {
   }
   
   fetchProducts() {
+    this.isLoading = true
     this.serviceProduct.fetch().subscribe(products => {
       this.products = products
+      this.isLoading = false
     })
   }
 
