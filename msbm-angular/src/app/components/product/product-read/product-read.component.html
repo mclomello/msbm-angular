@@ -1,4 +1,9 @@
-<div class="mat-elevation-z4">
+<div class="overlay" *ngIf="isLoading">
+    <div class="all-center">
+        <mat-spinner diameter="50" strokeWidth="3" ></mat-spinner>
+    </div>
+</div>
+<div *ngIf="!isLoading" class="mat-elevation-z4">
     <table mat-table [dataSource]="products">
 
         <ng-container matColumnDef="id">
