@@ -1,19 +1,23 @@
 table {
-    width: 100%;
+  width: 100%;
 }
 
 a {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .edit {
-    margin-right: 8px;
+  margin-right: 8px;
 }
 
 .edit > i {
-    color: #d9cd26
+  color: #d9cd26;
 }
 
 .delete > i {
-    color: #e35e6b
+  color: #e35e6b;
+}
+
+.action-column {
+  width: 128px;
 }

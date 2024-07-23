@@ -8,34 +8,38 @@ import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatCardModule } from '@angular/material/card'
-import { MatButtonModule } from '@angular/material/button'
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
 import { MatListModule } from '@angular/material/list';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-import { MatSidenavModule } from '@angular/material/sidenav'
-import { MatSnackBarModule } from '@angular/material/snack-bar'
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
-import { MatSortModule } from '@angular/material/sort'
-import { MatDialogModule } from '@angular/material/dialog'
-import { MatProgressSpinnerModule } from '@angular/material/progress-spinner'
+import { MatSortModule } from '@angular/material/sort';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 import { HomeComponent } from './views/home/home.component';
 import { HeaderComponent } from './components/template/header/header.component';
 import { FooterComponent } from './components/template/footer/footer.component';
-import { NavigationComponent } from './components/template/navigation/navigation.component'
-import { ConfirmationDialogComponent } from './components/shared/confirmation-dialog/confirmation-dialog.component'
+import { NavigationComponent } from './components/template/navigation/navigation.component';
+import { ConfirmationDialogComponent } from './components/shared/confirmation-dialog/confirmation-dialog.component';
 import { ProductCrudComponent } from './views/product-crud/product-crud.component';
 import { ProductCreateComponent } from './components/product/product-create/product-create.component';
 import { ProductReadComponent } from './components/product/product-read/product-read.component';
 import { ProductReadTableComponent } from './components/product/product-read-table/product-read-table.component';
 import { ProductUpdateComponent } from './components/product/product-update/product-update.component';
 
-import localePt from '@angular/common/locales/pt'
+import localePt from '@angular/common/locales/pt';
 import { registerLocaleData } from '@angular/common';
+import { CoinValuationParametersPageComponent } from './views/coin-valuation-parameters-page/coin-valuation-parameters-page.component';
+import { CoinValuationParametersCreateComponent } from './components/coin-valuation-parameters/coin-valuation-parameters-create/coin-valuation-parameters-create.component';
+import { CoinValuationParametersListComponent } from './components/coin-valuation-parameters/coin-valuation-parameters-list/coin-valuation-parameters-list.component';
+import { CoinValuationParametersUpdateComponent } from './components/coin-valuation-parameters/coin-valuation-parameters-update/coin-valuation-parameters-update.component';
 
-registerLocaleData(localePt)
+registerLocaleData(localePt);
 
 @NgModule({
   declarations: [
@@ -49,7 +53,11 @@ registerLocaleData(localePt)
     ProductReadComponent,
     ProductReadTableComponent,
     ProductUpdateComponent,
-    ConfirmationDialogComponent
+    ConfirmationDialogComponent,
+    CoinValuationParametersPageComponent,
+    CoinValuationParametersCreateComponent,
+    CoinValuationParametersListComponent,
+    CoinValuationParametersUpdateComponent,
   ],
   imports: [
     BrowserModule,
@@ -69,15 +77,15 @@ registerLocaleData(localePt)
     MatPaginatorModule,
     MatSortModule,
     MatDialogModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
   ],
-  entryComponents: [
-    ConfirmationDialogComponent
+  entryComponents: [ConfirmationDialogComponent],
+  providers: [
+    {
+      provide: LOCALE_ID,
+      useValue: 'pt-BR',
+    },
   ],
-  providers: [{
-    provide: LOCALE_ID,
-    useValue: 'pt-BR'
-  }],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

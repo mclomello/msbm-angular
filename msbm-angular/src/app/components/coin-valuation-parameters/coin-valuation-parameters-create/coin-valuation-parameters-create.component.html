@@ -1,0 +1,32 @@
+<mat-card class="mat-elevation-z4">
+  <mat-card-title> New Coin Valuation Parameter </mat-card-title>
+  <form>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Description"
+        [(ngModel)]="valuationParameter.description"
+        name="description"
+      />
+    </mat-form-field>
+
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Weight (%)"
+        [(ngModel)]="valuationParameter.weight"
+        name="weight"
+      />
+    </mat-form-field>
+  </form>
+
+  <button
+    mat-raised-button
+    (click)="createValuationParameter()"
+    color="primary"
+  >
+    Save
+  </button>
+
+  <button mat-raised-button (click)="cancel()" color="secondary">Cancel</button>
+</mat-card>

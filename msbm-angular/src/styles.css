@@ -1,30 +1,38 @@
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@import "~bootstrap/dist/css/bootstrap.css";
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
 
 .red {
-    color: #e35e6b;
+  color: #e35e6b;
 }
 
 .v-middle {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 .all-center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
 }
 
-.overlay{
-    height: 100vh;
-    width: 100%;
-    padding-left: 200px;
-    background-color: #AAAAAA;
-    z-index: 9;
-    top: 0;
-    left: 0;
-    position: fixed;
+.overlay {
+  height: 100vh;
+  width: 100%;
+  padding-left: 200px;
+  background-color: #aaaaaa;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  position: fixed;
 }
